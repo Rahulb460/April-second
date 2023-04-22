@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+.heading {
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 40px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.dropdown {
+    margin: 20px 40px;   
+}
+
+.select {
+    border: 2px solid white;
+    display: inline-block;
+    padding: 10px 0px;
+    font-size: 22px;
+    width: 11vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.select:hover {
+    border: 2px solid yellow;
+}
+
+.menu {
+    margin: 10px;
+    display: none;
+    cursor: pointer;
+}
+
+#profession {
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+}
+#profession1 {
+    padding: 10px;
+    cursor: pointer;
+}
+.menu-items {
+    padding: 5px;
+}
+.menu-items:hover {
+    color: yellow;
+}
+
+
+/* .members {
+    margin: 20px 40px;  
+} */
+
+.individual {
+    margin: 20px 40px !important; 
+    border: 2px solid white;
+    font-size: 18px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 50vw;
+    padding: 10px;
+    border-radius: 10px;
+}
+.individual:hover {
+    border: 2px solid yellow;
+}
+
+.individual > #profession, #name {
+    width: 15vw;
+}
+
+#filter{
+    border: none;
+    background-color: white;
+    color: black;
+    padding: 10px 70px;
+    font-size: 24px;
+    margin-left: 40px;
+    cursor: pointer;
+    border: 2px solid black;
+}
+#filter:hover {
+    background-color: rgb(40, 92, 122);
+    color: white;
+}
+
+.new-user{
+    margin: 20px 40px ;
+    display: flex;
+    justify-content: space-between;
+}
+.new-user > div {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.new-user > div > label {
+    font-size: 20px;
+}
+.new-user > div > input {
+    border: 2px solid white;
+    height: 5vh;
+    border-radius: 5px;
+}
+.new-user > div > input:focus{
+    outline: none !important;
+    border: 2px solid yellow !important;
+}
+#add-user{
+    border: none;
+    background-color: white;
+    color: black;
+    padding: 10px 70px;
+    font-size: 24px;
+    margin-left: 40px;
+    cursor: pointer;
+    border: 2px solid black;
+}
+#add-user:hover {
+    background-color: rgb(40, 92, 122);
+    color: white;
+}
+
+.pop-up {
+    display: none;
+    padding: 20px;
+    position: absolute;
+    width: 30vw;
+    height: 30vh;
+    margin: auto;
+    background-color: white;
+    left: 30%;
+    top: 30%;
+    /* display: flex;
+    flex-direction: column; */
+    justify-content: center;
+    gap: 20px;
+    background-color: aquamarine;
+    opacity: 1;
+    
+}
+.pop-up > p {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 22px;
+    background-color: aquamarine;
+    color: black;
+}
+#close {
+    display: inline-block;
+    width: 80px;
+    border: 5px solid blue !important;
+    margin-left: 180px;
+    margin-top: 50px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: orangered;
+    border: none;
+    border-radius: 10px;
+}

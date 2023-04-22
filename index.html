@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contest</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <span class="heading">Filter ui cards via their profession.</span>
+    <div class="dropdown">
+        <div class="select" id="select">
+            <div id="profession1">
+                <span class="text">Profession</span>
+                <span>▼</span>
+            </div>
+            
+            <ul class="menu" id="menu">
+                <li class="menu-items" id="developer" onclick="hide1()">Developer</li>
+                <li class="menu-items" id="admin" onclick="hide2()">Admin</li>
+            </ul>
+        </div>
+
+    </div>
+
+
+    <div class="members" id="members">
+        <div class="individual" id="1">
+            <div id="id">1</div>
+            <div id="name">Name : 
+                <span>John</span>
+            </div>
+            <div id="profession">Profession :
+                <span>Developer</span>
+            </div>
+            <div id="age">Age :
+                <span>18</span>
+            </div>
+        </div>
+        <div class="individual" id="2">
+            <div id="id">2</div>
+            <div id="name">Name : 
+                <span>Jack</span>
+            </div>
+            <div id="profession">Profession :
+                <span>Developer</span>
+            </div>
+            <div id="age">Age :
+                <span>20</span>
+            </div>
+        </div>
+        <div class="individual" id="3">
+            <div id="id">3</div>
+            <div id="name">Name : 
+                <span>Karen</span>
+            </div>
+            <div id="profession">Profession :
+                <span>Admin</span>
+            </div>
+            <div id="age">Age :
+                <span>19</span>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- PopUp message -->
+    <din class="pop-up" id="pop-up">
+            <p>Select a profession first before clicking the button.</p>
+            <button id="close" onclick="popUp()">Close</button>
+    </din>
+
+    <button id="filter" onclick="filterEle()">Filter</button>
+
+    <div>
+        <span class="heading">Add a new user</span>
+    </div>
+
+    <div class="new-user">
+        <div>
+            <label for="new-name">Enter Name</label>
+            <input type="text" id="new-name">
+        </div>
+        <div>
+            <label for="new-profession">Enter Profession</label>
+            <input type="text" id="new-profession">
+        </div>
+        <div>
+            <label for="new-age">Enter Age</label>
+            <input type="text" id="new-age">
+        </div>
+    </div>
+
+    <button id="add-user" onclick="addUser()">Add user</button>
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
